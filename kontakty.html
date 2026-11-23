@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Портал | Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Мой IT-Портал</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stati.html">Статьи и уроки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="o_nas.html">О проекте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kontakty.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-7">
+                <div class="card kartochka-uroka p-4">
+                    <h2 class="mb-3">Написать нам</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Электронная почта</label>
+                            <input type="email" class="form-control" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Тема обращения</label>
+                            <select class="form-select">
+                                <option>Вопрос по урокам</option>
+                                <option>Предложить материал</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Сообщение</label>
+                            <textarea class="form-control" rows="4" placeholder="Напишите ваш вопрос..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#oknoOtpravki">
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card kartochka-uroka p-4">
+                    <h3 class="mb-3">Наши контакты</h3>
+                    <p><strong>Город:</strong> Ош, Кыргызстан</p>
+                    <p><strong>Email:</strong> itportal.kg@gmail.com</p>
+                    <p><strong>График работы:</strong> Пн – Пт, с 9:00 до 18:00</p>
+                    <hr>
+                    <p class="text-muted mb-3">Нужна быстрая консультация? Нажмите на кнопку ниже:</p>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#oknoZvonka">
+                        Заказать обратный звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="oknoOtpravki" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Успешно!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Ваше сообщение успешно отправлено! Мы ответим вам в ближайшее время.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Хорошо</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="oknoZvonka" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Заказать звонок</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Ваш номер телефона:</label>
+                    <input type="tel" class="form-control" placeholder="+996 (___) __-__">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Жду звонка</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="podval text-center">
+        <div class="container">
+            <p class="mb-0"> Мой IT-Портал. Учебный проект на Bootstrap.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
